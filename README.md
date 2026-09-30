@@ -87,5 +87,5 @@ This section introduces a unique Bayesian Optimization strategy that leverages L
 *   **Duplicate Handling**: Similar mechanisms for checking and perturbing duplicate points are employed to ensure that diverse input suggestions are provided, even in cases where the acquisition function repeatedly points to already explored regions.
 
 ## Additioanl URLs
-*   **Datasheet** : 
-*   **Model Card** : 
+*   **Datasheet** : http://github.com/swarada/BBO-Capstone-Project/blob/main/documentation/Datasheet.md 
+*   **Model Card** : https://github.com/swarada/BBO-Capstone-Project/blob/main/documentation/model-card.md 
