@@ -2,22 +2,6 @@
 
 This project explores various Bayesian Optimization (BO) strategies to efficiently optimize several black-box functions. The goal is to find optimal input parameters that maximize the output of these functions, typically within a constrained search space. The notebook tracks weekly submissions, incorporating new evaluation results and adapting the BO approach over time.
 
-## Submissions History
-
-The following is a chronological record of the Bayesian Optimization strategies employed and key observations from weekly evaluations:
-
-*   **Week 1**: Initial exploration using random search with exploitation.
-*   **Week 2-3**: Gaussian Process (GP) with `GPyOpt.methods.BayesianOptimization`. Noted issues with incorrect bounds leading to `1.000000` as a suggested input for some functions.
-*   **Week 4-5**: Switched to Gpytorch BO, utilizing Beta 2.0 and Upper Confidence Bound (UCB) as the acquisition function.
-*   **Week 6-7**: Continued with Gpytorch BO, but incorporated dynamic updates for hyperparameters like Beta and introduced the option for Expected Improvement (EI) alongside UCB.
-*   **Week 8-9**: Explored Neural Networks as surrogate models, implemented with BoTorch.
-*   **Week 10-11**: Adopted Logistic Regression as the surrogate model, treating the optimization as a binary classification problem.
-*   **Week 12**: A hybrid approach was taken:
-    *   **Functions 1-6**: PyTorch BO with Beta 2.0 and UCB, as this strategy had consistently yielded the highest performance.
-    *   **Function 7**: Neural Networks with BoTorch.
-    *   **Function 8**: Gpytorch BO with dynamically updated hyperparameters for Beta and UCB/EI.
-
-
 ## Setup and Environment
 
 To run this notebook, the following steps are required:
@@ -74,6 +58,30 @@ This approach utilizes a custom feed-forward Neural Network as the surrogate mod
 ## Bayesian Optimization with Logistic Regression (LR) Surrogate
 
 This section introduces a unique Bayesian Optimization strategy that leverages Logistic Regression as the surrogate model. The core innovation here is the transformation of the continuous optimization problem into a binary classification task.
+
+
+## Weekly Submissions History
+
+The following is a chronological record of the Bayesian Optimization strategies employed and key observations from weekly evaluations:
+
+*   **Week 1**: Initial exploration using random search with exploitation.
+*   **Week 2-3**: Gaussian Process (GP) with `GPyOpt.methods.BayesianOptimization`. Noted issues with incorrect bounds leading to `1.000000` as a suggested input for some functions.
+*   **Week 4-5**: Switched to Gpytorch BO, utilizing Beta 2.0 and Upper Confidence Bound (UCB) as the acquisition function.
+*   **Week 6-7**: Continued with Gpytorch BO, but incorporated dynamic updates for hyperparameters like Beta and introduced the option for Expected Improvement (EI) alongside UCB.
+*   **Week 8-9**: Explored Neural Networks as surrogate models, implemented with BoTorch.
+*   **Week 10-11**: Adopted Logistic Regression as the surrogate model, treating the optimization as a binary classification problem.
+*   **Week 12**: A hybrid approach was taken:
+    *   **Functions 1-6**: PyTorch BO with Beta 2.0 and UCB, as this strategy had consistently yielded the highest performance.
+    *   **Function 7**: Neural Networks with BoTorch.
+    *   **Function 8**: Gpytorch BO with dynamically updated hyperparameters for Beta and UCB/EI.
+*   **Week 13**: A hybrid approach was taken:
+    *   **Functions 1-6**: PyTorch BO with Beta 2.0 and UCB, as this strategy had consistently yielded the highest performance.
+    *   **Function 7**: Neural Networks with BoTorch.
+    *   **Function 8**: Gpytorch BO with dynamically updated hyperparameters for Beta and UCB/EI.
+
+### Sumbmission Progress:
+![week12.png](reports/week12.png)
+
 
 ### Key Components:
 
